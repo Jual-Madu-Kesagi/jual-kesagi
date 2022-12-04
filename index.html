@@ -87,7 +87,7 @@
             display: flex;
             flex-direction: column;
             padding: 2px 0px;
-            width: 430px;
+            width: 270px;
         }
 
         .brand-logo-name {
@@ -97,11 +97,9 @@
             display: flex;
             gap: 2px;
             padding: 2px 0px;
-            cursor: pointer;
         }
 
         a.logo-brand {
-            cursor: pointer;
             height: 50px;
             min-width: 50px;
             object-fit: cover;
@@ -116,6 +114,7 @@
             flex: 1;
             font-family: var(--main-font);
             font-weight: 800;
+            font-size: 22px;
             line-height: 28px;
             margin-top: -1px;
             gap: 2px;
@@ -137,17 +136,47 @@
             align-self: stretch;
             border: 1px none;
             display: flex;
-            gap: 8px;
+            gap: 4px;
             padding: 2px 0px;
             background-color: #796418;
         }
 
         .count-rate {
-            border-right: solid white;
-            width: 90px;
+            border-right: 1px solid white;
+            width: 80px;
+            cursor: pointer;
         }
 
-        .count {
+        a.count {
+            color: #fff;
+            font-family: var(--main-font);
+            font-weight: 400;
+            font-size: 11px;
+            height: 16px;
+            line-height: 16px;
+            margin-top: -1px;
+            white-space: nowrap;
+        }
+
+        .icon-star-rate {
+            height: 12px;
+        }
+
+        .reviewed-count {
+            border-right: 1px solid white;
+            gap: 6px;
+            width: 90px;
+            height: 16px;
+            line-height: 16px;
+            color: #fff;
+            font-family: var(--main-font);
+            font-weight: 400;
+            font-size: 11px;
+            margin-top: -1px;
+            white-space: nowrap;
+        }
+
+        a.reviewed {
             color: #fff;
             font-family: var(--main-font);
             font-weight: 400;
@@ -155,6 +184,47 @@
             line-height: 16px;
             margin-top: -1px;
             white-space: nowrap;
+        }
+
+        .sold-count {
+            gap: 6px;
+            width: 90px;
+            color: #fff;
+            font-family: var(--main-font);
+            font-weight: 400;
+            font-size: 11px;
+            margin-top: -1px;
+            white-space: nowrap;
+        }
+
+        a.sold {
+            color: #fff;
+            font-family: var(--main-font);
+            font-weight: 400;
+            height: 16px;
+            line-height: 16px;
+            margin-top: -1px;
+            white-space: nowrap;
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 47px;
+            justify-content: center;
         }
     </style>
 </head>
@@ -191,14 +261,35 @@
                         </svg>
                     </div>
                     <div class="reviewed-count">
-                        <a href="">100,3K</a>
+                        <a href="" class="reviewed">100,3K</a>
                         <span>Penilaian</span>
                     </div>
                     <div class="sold-count">
-                        <a href="">100,3K</a>
-                        <span>Penilaian</span>
+                        <a href="" class="sold">100,3K</a>
+                        <span>Penjualan</span>
                     </div>
                 </div>
+            </div>
+            <div class="nav-list">
+                <ul class="menu">
+                    <li><a href="">Beranda</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Produk</a></li>
+                    <li><a href="">Harga</a></li>
+                    <li><a href="">Review</a></li>
+                </ul>
+                <button>
+                    <a href="">
+                        <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.64282 22C7.09282 22 6.62216 21.8043 6.23082 21.413C5.83882 21.021 5.64282 20.55 5.64282 20C5.64282 19.45 5.83882 18.979 6.23082 18.587C6.62216 18.1957 7.09282 18 7.64282 18C8.19282 18 8.66349 18.1957 9.05482 18.587C9.44682 18.979 9.64282 19.45 9.64282 20C9.64282 20.55 9.44682 21.021 9.05482 21.413C8.66349 21.8043 8.19282 22 7.64282 22ZM17.6428 22C17.0928 22 16.6222 21.8043 16.2308 21.413C15.8388 21.021 15.6428 20.55 15.6428 20C15.6428 19.45 15.8388 18.979 16.2308 18.587C16.6222 18.1957 17.0928 18 17.6428 18C18.1928 18 18.6638 18.1957 19.0558 18.587C19.4472 18.979 19.6428 19.45 19.6428 20C19.6428 20.55 19.4472 21.021 19.0558 21.413C18.6638 21.8043 18.1928 22 17.6428 22ZM6.79282 6L9.19282 11H16.1928L18.9428 6H6.79282ZM5.84282 4H20.5928C20.9762 4 21.2678 4.17067 21.4678 4.512C21.6678 4.854 21.6762 5.2 21.4928 5.55L17.9428 11.95C17.7595 12.2833 17.5135 12.5417 17.2048 12.725C16.8968 12.9083 16.5595 13 16.1928 13H8.74282L7.64282 15H19.6428V17H7.64282C6.89282 17 6.32616 16.6707 5.94282 16.012C5.55949 15.354 5.54282 14.7 5.89282 14.05L7.24282 11.6L3.64282 4H1.64282V2H4.89282L5.84282 4ZM9.19282 11H16.1928H9.19282Z"
+                                fill="white" />
+                        </svg>
+
+                        Beli Sekarang
+                    </a>
+                </button>
+                <button>Login</button>
             </div>
         </nav>
     </header>
