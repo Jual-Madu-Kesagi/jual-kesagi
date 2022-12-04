@@ -81,7 +81,6 @@
 
         .brand-logo-review {
             align-items: flex-start;
-            background-color: rgb(209, 187, 64);
             align-self: stretch;
             border: 1px none;
             display: flex;
@@ -138,7 +137,6 @@
             display: flex;
             gap: 4px;
             padding: 2px 0px;
-            background-color: #796418;
         }
 
         .count-rate {
@@ -216,15 +214,53 @@
 
         .menu {
             display: flex;
-            gap: 20px;
+            gap: 36px;
+        }
+
+        .nav-link {
+            color: #fff;
+        }
+
+        .nav-link:hover {
+            background-color: #796418;
         }
 
         button {
+            background: none;
+            border: none;
+        }
+
+        .cta-buy {
+            border-right: solid #fff;
+            width: 110px;
+        }
+
+        .cta {
             align-items: center;
             display: flex;
             flex-direction: column;
             height: 47px;
             justify-content: center;
+            color: #fff;
+            gap: 8px;
+        }
+
+        .cta:hover {
+            background-color: #796418;
+        }
+
+        .cta:active {
+            background-color: #796418;
+        }
+
+        @media screen and (max-width:1400px) {
+            .container {
+                width: 100%;
+            }
+
+            .container-wrapper {
+                padding: 0 50px;
+            }
         }
     </style>
 </head>
@@ -272,24 +308,35 @@
             </div>
             <div class="nav-list">
                 <ul class="menu">
-                    <li><a href="">Beranda</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Produk</a></li>
-                    <li><a href="">Harga</a></li>
-                    <li><a href="">Review</a></li>
+                    <li><a href="" class="nav-link">Beranda</a></li>
+                    <li><a href="" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="" class="nav-link">Produk</a></li>
+                    <li><a href="" class="nav-link">Harga</a></li>
+                    <li><a href="" class="nav-link">Testimoni</a></li>
                 </ul>
-                <button>
-                    <a href="">
+                <button class="cta-buy">
+                    <a href="" class="cta">
                         <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M7.64282 22C7.09282 22 6.62216 21.8043 6.23082 21.413C5.83882 21.021 5.64282 20.55 5.64282 20C5.64282 19.45 5.83882 18.979 6.23082 18.587C6.62216 18.1957 7.09282 18 7.64282 18C8.19282 18 8.66349 18.1957 9.05482 18.587C9.44682 18.979 9.64282 19.45 9.64282 20C9.64282 20.55 9.44682 21.021 9.05482 21.413C8.66349 21.8043 8.19282 22 7.64282 22ZM17.6428 22C17.0928 22 16.6222 21.8043 16.2308 21.413C15.8388 21.021 15.6428 20.55 15.6428 20C15.6428 19.45 15.8388 18.979 16.2308 18.587C16.6222 18.1957 17.0928 18 17.6428 18C18.1928 18 18.6638 18.1957 19.0558 18.587C19.4472 18.979 19.6428 19.45 19.6428 20C19.6428 20.55 19.4472 21.021 19.0558 21.413C18.6638 21.8043 18.1928 22 17.6428 22ZM6.79282 6L9.19282 11H16.1928L18.9428 6H6.79282ZM5.84282 4H20.5928C20.9762 4 21.2678 4.17067 21.4678 4.512C21.6678 4.854 21.6762 5.2 21.4928 5.55L17.9428 11.95C17.7595 12.2833 17.5135 12.5417 17.2048 12.725C16.8968 12.9083 16.5595 13 16.1928 13H8.74282L7.64282 15H19.6428V17H7.64282C6.89282 17 6.32616 16.6707 5.94282 16.012C5.55949 15.354 5.54282 14.7 5.89282 14.05L7.24282 11.6L3.64282 4H1.64282V2H4.89282L5.84282 4ZM9.19282 11H16.1928H9.19282Z"
                                 fill="white" />
                         </svg>
-
                         Beli Sekarang
                     </a>
                 </button>
-                <button>Login</button>
+                <button>
+                    <a href="" class="cta">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.35 18.5C8.66 17.56 10.26 17 12 17C13.74 17 15.34 17.56 16.65 18.5C15.34 19.44 13.74 20 12 20C10.26 20 8.66 19.44 7.35 18.5ZM18.14 17.12C16.3884 15.7457 14.2264 14.9988 12 14.9988C9.77362 14.9988 7.6116 15.7457 5.86 17.12C4.65692 15.6853 3.9983 13.8723 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 13.95 19.3 15.73 18.14 17.12Z"
+                                fill="white" />
+                            <path
+                                d="M12 6C10.07 6 8.5 7.57 8.5 9.5C8.5 11.43 10.07 13 12 13C13.93 13 15.5 11.43 15.5 9.5C15.5 7.57 13.93 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z"
+                                fill="white" />
+                        </svg>
+                        Login
+                    </a>
+                </button>
             </div>
         </nav>
     </header>
