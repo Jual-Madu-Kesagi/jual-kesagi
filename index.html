@@ -81,6 +81,7 @@
 
         .brand-logo-review {
             align-items: flex-start;
+            background-color: rgb(209, 187, 64);
             align-self: stretch;
             border: 1px none;
             display: flex;
@@ -98,6 +99,63 @@
             padding: 2px 0px;
             cursor: pointer;
         }
+
+        a.logo-brand {
+            cursor: pointer;
+            height: 50px;
+            min-width: 50px;
+            object-fit: cover;
+        }
+
+        a.brand-name {
+            align-items: flex-start;
+            align-self: stretch;
+            color: #fff;
+            border: 1px none;
+            display: flex;
+            flex: 1;
+            font-family: var(--main-font);
+            font-weight: 800;
+            line-height: 28px;
+            margin-top: -1px;
+            gap: 2px;
+            height: 50px;
+            padding: 2px;
+            width: 212.63px;
+        }
+
+        .alight-text-midle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: stretch;
+            font-family: var(--main-font);
+        }
+
+        .sosiolita-seller-rating-widget {
+            align-items: center;
+            align-self: stretch;
+            border: 1px none;
+            display: flex;
+            gap: 8px;
+            padding: 2px 0px;
+            background-color: #796418;
+        }
+
+        .count-rate {
+            border-right: solid white;
+            width: 90px;
+        }
+
+        .count {
+            color: #fff;
+            font-family: var(--main-font);
+            font-weight: 400;
+            height: 16px;
+            line-height: 16px;
+            margin-top: -1px;
+            white-space: nowrap;
+        }
     </style>
 </head>
 
@@ -108,36 +166,38 @@
                 <div class="brand-logo-name">
                     <a href="index.html" class="brand-name">
                         <img src="src/img/jual-madu-kesagi-logo.png" class="logo-brand" alt="Kesagi" width="50px"
-                            height="50px">Kesagi
+                            height="50px"><span class="alight-text-midle">Kesagi</span>
                     </a>
                 </div>
-                <div class="sosiolita-rating-widget">
-                    <a href="#" class="count-rate">4,8</a>
-                    <svg width="52" height="12" class="icon-star-rate" viewBox="0 0 52 12" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.9125 11L4.075 7.2L1 5H4.8L6 1L7.2 5H11L7.925 7.2L9.0875 11L6 8.65L2.9125 11Z"
-                            fill="white" />
-                        <path
-                            d="M12.9125 11L14.075 7.2L11 5H14.8L16 1L17.2 5H21L17.925 7.2L19.0875 11L16 8.65L12.9125 11Z"
-                            fill="white" />
-                        <path
-                            d="M22.9125 11L24.075 7.2L21 5H24.8L26 1L27.2 5H31L27.925 7.2L29.0875 11L26 8.65L22.9125 11Z"
-                            fill="white" />
-                        <path
-                            d="M32.9125 11L34.075 7.2L31 5H34.8L36 1L37.2 5H41L37.925 7.2L39.0875 11L36 8.65L32.9125 11Z"
-                            fill="white" />
-                        <path
-                            d="M46 4.45V7.4L47.2 8.325L46.75 6.8L47.875 6H46.475L46 4.45ZM42.9125 11L44.075 7.2L41 5H44.8L46 1L47.2 5H51L47.925 7.2L49.0875 11L46 8.65L42.9125 11Z"
-                            fill="white" />
-                    </svg>
-                </div>
-                <div class="reviewed-count">
-                    <a href="">100,3K</a>
-                    <span>Penilaian</span>
-                </div>
-                <div class="sold-count">
-                    <a href="">100,3K</a>
-                    <span>Penilaian</span>
+                <div class="sosiolita-seller-rating-widget">
+                    <div class="count-rate">
+                        <a href="#" class="count">4,8</a>
+                        <svg width="52" height="12" class="icon-star-rate" viewBox="0 0 52 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.9125 11L4.075 7.2L1 5H4.8L6 1L7.2 5H11L7.925 7.2L9.0875 11L6 8.65L2.9125 11Z"
+                                fill="white" />
+                            <path
+                                d="M12.9125 11L14.075 7.2L11 5H14.8L16 1L17.2 5H21L17.925 7.2L19.0875 11L16 8.65L12.9125 11Z"
+                                fill="white" />
+                            <path
+                                d="M22.9125 11L24.075 7.2L21 5H24.8L26 1L27.2 5H31L27.925 7.2L29.0875 11L26 8.65L22.9125 11Z"
+                                fill="white" />
+                            <path
+                                d="M32.9125 11L34.075 7.2L31 5H34.8L36 1L37.2 5H41L37.925 7.2L39.0875 11L36 8.65L32.9125 11Z"
+                                fill="white" />
+                            <path
+                                d="M46 4.45V7.4L47.2 8.325L46.75 6.8L47.875 6H46.475L46 4.45ZM42.9125 11L44.075 7.2L41 5H44.8L46 1L47.2 5H51L47.925 7.2L49.0875 11L46 8.65L42.9125 11Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="reviewed-count">
+                        <a href="">100,3K</a>
+                        <span>Penilaian</span>
+                    </div>
+                    <div class="sold-count">
+                        <a href="">100,3K</a>
+                        <span>Penilaian</span>
+                    </div>
                 </div>
             </div>
         </nav>
