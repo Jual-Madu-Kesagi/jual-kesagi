@@ -292,10 +292,11 @@
 
         @media screen and (max-width:768px) {
             .container {
-                width: 100%;
+                width: 768px;
             }
 
             .container-wrapper {
+                width: 768px;
                 padding: 0px 15px;
             }
 
@@ -306,11 +307,22 @@
 
         @media screen and (max-width:576px) {
             .container {
-                width: auto;
+                width: 100%;
             }
 
             .container-wrapper {
-                padding: 0px 10px;
+                width: 100%;
+                padding: 0px 15px;
+            }
+
+            .brand-logo-review {
+                align-items: flex-start;
+                align-self: stretch;
+                border: 1px none;
+                display: flex;
+                flex-direction: column;
+                padding: 2px 0px;
+                width: 250px;
             }
 
             .menu {
@@ -320,15 +332,30 @@
 
         @media screen and (max-width:360px) {
             .container {
-                width: 360px;
+                width: 100%;
             }
 
             .container-wrapper {
                 padding: 0px 10px;
             }
 
+            .brand-logo-review {
+                align-items: flex-start;
+                align-self: stretch;
+                border: 1px none;
+                display: flex;
+                flex-direction: column;
+                padding: 2px 0px;
+                width: 249px;
+            }
+
             .menu {
                 display: none;
+            }
+
+            .cta-buy {
+                border-right: none;
+                width: 20px;
             }
         }
     </style>
