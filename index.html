@@ -351,17 +351,18 @@
 
 <body>
     <header class="container">
-        <nav class="container-wrapper">
-            <div class="brand-logo-review">
+        <nav class="container-wrapper" itemscope itemtype="https://schema.org/Product">
+            <div class="brand-logo-review" itemprop="brand" itemtype="https://schema.org/Brand">
                 <div class="brand-logo-name">
                     <a href="index.html" class="brand-name">
-                        <img src="src/img/jual-madu-kesagi-logo.png" class="logo-brand" alt="Kesagi" width="50px"
-                            height="50px"><span class="alight-text-midle">Kesagi</span>
+                        <img itemprop="image" src="src/img/jual-madu-kesagi-logo.png" class="logo-brand" alt="Kesagi"
+                            width="50px" height="50px"><span class="alight-text-midle" itemprop="name">Kesagi</span>
                     </a>
                 </div>
-                <div class="sosiolita-seller-rating-widget">
+                <div class="sosiolita-seller-rating-widget" itemprop="aggregateRating" itemscope
+                    itemtype="https://schema.org/AggregateRating">
                     <div class="count-rate">
-                        <a href="#" class="count">4,8</a>
+                        <a href="#" class="count" itemprop="ratingValue" content="4.8">4.8</a>
                         <svg width="52" height="12" class="icon-star-rate" viewBox="0 0 52 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.9125 11L4.075 7.2L1 5H4.8L6 1L7.2 5H11L7.925 7.2L9.0875 11L6 8.65L2.9125 11Z"
@@ -381,7 +382,7 @@
                         </svg>
                     </div>
                     <div class="reviewed-count">
-                        <a href="" class="reviewed">100,3K</a>
+                        <a href="" class="reviewed" itemprop="ratingCount" content="100000">100,3K</a>
                         <span>Penilaian</span>
                     </div>
                     <div class="sold-count">
